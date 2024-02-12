@@ -1,0 +1,32 @@
+<div class="login-Form">
+    <form [formGroup]="loginForm" (ngSubmit)="onLoginFormSubmit()">
+    <h2>Login</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field appearance="outline">
+                <mat-label>UserName</mat-label>
+                <input matInput placeholder="UserName" [(ngModel)]="username" formControlName="username">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput placeholder="Email" [(ngModel)]="email" formControlName="email">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field appearance="outline">
+                <mat-label>PassWord</mat-label>
+                <input type="password" matInput placeholder="PassWord" [(ngModel)]="password" formControlName="password">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="submit-button">
+        <button class="submit" mat-stroked-button color="primary" type="submit">Submit</button>
+    </div>
+</form>
+</div>

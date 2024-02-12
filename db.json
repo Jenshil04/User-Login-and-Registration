@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user-data": [
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "dob": "",
+      "mobileNumber": "",
+      "id": 1
+    },
+    {
+      "username": "",
+      "password": "",
+      "email": "",
+      "dob": "",
+      "mobileNumber": "",
+      "id": 2
+    },
+    {
+      "username": "Test",
+      "password": "",
+      "email": "",
+      "dob": "",
+      "mobileNumber": "",
+      "id": 3
+    },
+    {
+      "username": "Jenshil",
+      "password": "jenshil",
+      "email": "jenshil@gmail.com",
+      "dob": "2024-02-07T18:30:00.000Z",
+      "mobileNumber": "",
+      "id": 4
+    }
+  ]
+}

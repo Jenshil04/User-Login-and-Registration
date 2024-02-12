@@ -1,0 +1,23 @@
+.login-Form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background: linear-gradient(to right, #87CEEB, #e1f8fd);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+mat-form-field{
+    width: 100%;
+}
+.submit-button {
+    text-align: center;
+    
+}
+.submit{
+    width: 200px;
+    background: linear-gradient(to right, #87CEEB, #ffffff);
+}

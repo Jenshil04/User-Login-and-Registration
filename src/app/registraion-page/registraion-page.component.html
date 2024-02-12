@@ -1,0 +1,55 @@
+<div class="Registration-Form">
+    <form [formGroup]="registrationForm" (ngSubmit)="onRegistrationFormSubmit()">
+    <h2>New Registraion</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field appearance="outline">
+                <mat-label>UserName</mat-label>
+                <input matInput placeholder="UserName" [(ngModel)]="username" formControlName="username">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput placeholder="Email" [(ngModel)]="email" formControlName="email">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field appearance="outline">
+                <mat-label>DOB</mat-label>
+                <input matInput [matDatepicker]="datepicker" [(ngModel)]="dob" formControlName="dob">
+                <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker>
+                    <mat-datepicker-actions>
+                        <button mat-button matDatepickerCancel>Cancel</button>
+                        <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                    </mat-datepicker-actions>
+                </mat-datepicker>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field appearance="outline">
+                <mat-label>Mobile Number</mat-label>
+                <input type="number" matInput placeholder="Mobile Number" [(ngModel)]="mobilenumber" formControlName="mobilenumber">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <mat-form-field appearance="outline">
+                <mat-label>PassWord</mat-label>
+                <input type="password" matInput placeholder="PassWord" [(ngModel)]="password" formControlName="password">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="submit-button">
+        <button class="submit" mat-stroked-button color="primary" type="submit">Submit</button>
+    </div>
+</form>
+</div>
